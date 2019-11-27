@@ -1,0 +1,121 @@
+ /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+.image {
+	height: 86vh;
+	background-size: cover;
+	width: 93.7em;
+	background-image: url('/assets/travel.jpg');
+	background-position: 50% 50%;
+}
+
+.paymentmodeimage {
+	height: 60em;
+	background-size: cover;
+	width: auto;
+	background-image: url('/assets/paymentMode.jpg');
+}
+
+.travel-container {
+    width: 50vw;
+    margin: auto;
+}
+
+.travel-title  {
+    width: 100%;
+}
+
+.travel-text{
+    width: 100%;
+}
+
+.travel-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.travel-wrapper > * {
+    flex: 0 0 28%;
+    margin: 10px;
+}
+
+.error-message {
+   color: red;
+ }
+
+.keep-c-note-container{
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container {
+ top: 150px !important;
+}
+
+.keep-c-note{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.mat-accordion {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  border-bottom: none;
+  background-color: white;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+mat-panel-title,
+mat-panel-description,
+span {
+  display: block;
+}
+
+mat-panel-title {
+	width:30rem;
+}
+
+mat-panel-description {
+width:10rem;
+}
+
+.mat-expansion-panel-header.mat-row  {
+  border-bottom: none;
+  background-color: white;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.mat-expansion-panel-header.mat-expanded.mat-row  {
+  color: red;
+  background: white;
+}
+
+.mat-table {
+  display: block;
+}
+
+.mat-header-row {
+  min-height: 56px;
+}
+
+.mat-row {
+  min-height: 58px;
+}
+
+.mat-row, .mat-header-row {
+  display: flex;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+  align-items: center;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.mat-cell, .mat-header-cell {
+  overflow: hidden;
+  word-wrap: break-word;
+}

@@ -1,0 +1,51 @@
+# Dockerfile has been added in all micro-services, you need to dockerize all micro-services and add docker-compose.yml file
+version: '3.3'
+services:
+    AngularUIService:
+        container_name: AngularUserInterface
+        build:
+            context: .
+            dockerfile: ./AngularTravelOnline/Dockerfile
+        image: kamesh08/demo:1000
+        expose:
+            - 4200
+        ports:
+            - 4200:4200
+        networks:
+            - emp-network
+        logging:
+            driver: json-file
+    UserAuthenticationService:
+        container_name: UserAuthentication
+        build:
+            context: .
+            dockerfile: ./UserAuthentication-Service/Dockerfile
+        image: kamesh08/demo:1001
+        expose:
+            - 9300
+        ports:
+            - 9300:9300
+        networks:
+            - emp-network
+        logging:
+            driver: json-file
+    OnlineTravelSummaryService:
+        container_name: onlineTravelSummary
+        build:
+            context: .
+            dockerfile: ./KarthickTravelOnline/Dockerfile
+        image: kamesh08/demo:1002
+        expose:
+            - 8091
+        ports:
+            - 8091:8091
+        networks:
+            - emp-network
+        logging:
+            driver: json-file
+networks:
+    emp-network:
+        driver: bridge
+volumes:
+    config-repo:
+        external: false

@@ -1,0 +1,22 @@
+.login-c-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 34em;
+    padding-top: 10em;
+    min-height: 70vh;
+    min-width:120vh;
+}
+
+label {
+    display: block;
+}
+.divcls {
+    margin:1em;
+}
+.image{
+         height:60em;
+         background-size:cover;
+         width:auto;
+         background-image:url('/assets/Travel_Program_fi.jpg');
+         background-position:50% 50%;
+       }

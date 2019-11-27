@@ -1,0 +1,7 @@
+.image {
+	height: 86vh;
+	background-size: cover;
+	width: 93.7em;
+	background-image: url('/assets/travel.jpg');
+	background-position: 50% 50%;
+}

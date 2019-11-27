@@ -1,0 +1,37 @@
+<div class='image'>
+<!-- Mandatory code for error displaying to prevent failing testcases  -->
+<label class="error-message"><span *ngIf="errMessage">{{ errMessage }}</span></label>
+
+<div class="keep-c-note-container">
+	<mat-accordion>
+	<mat-expansion-panel *ngFor="let note of notes">
+	<mat-expansion-panel-header class="mat-row">
+	<mat-panel-title>
+	<span class="mat-cell">{{note.travelFromDate | date:'EEEE, MMMM d, y @ h:mm:ss a'}}</span>
+	<span class="mat-cell"><img src="/assets/rupees.jpg" alt="Paris" width="30" height="30">Rs.{{note.amount}}</span>
+	</mat-panel-title>
+	<mat-panel-description>
+	<span class="mat-cell">{{note.city}}</span>
+	<span class="mat-cell"><img src="/assets/paymentMode.jpg" alt="Paris" width="30" height="30">{{note.paymentMode}}</span>
+	</mat-panel-description>
+	</mat-expansion-panel-header>
+	<div>
+		{{note.fromPlace}} <br/>
+		<pre>{{note.travelFromDate | date:'M/d/yy, h:mm a'}}</pre>
+	</div>
+	|<br />
+	|
+	<div>
+		{{note.toPlace}}
+		<pre>{{note.travelToDate | date:'M/d/yy, h:mm a'}}</pre>
+	</div>
+	</mat-expansion-panel>
+
+	</mat-accordion>
+<!-- Label to display any error messages -->
+
+</div>
+
+
+
+</div>

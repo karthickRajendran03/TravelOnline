@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: UserAuthenticationService
+
+server:
+  port: 9300
