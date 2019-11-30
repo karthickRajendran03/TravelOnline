@@ -8,7 +8,9 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
 COPY AngularTravelOnline/package.json /app/package.json
-RUN npm install -production
+RUN npm install
+RUN npm install -g @angular/cli@7.3.9
+
 
 # add app
 COPY AngularTravelOnline/. /app
