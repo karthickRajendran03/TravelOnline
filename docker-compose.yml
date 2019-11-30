@@ -6,7 +6,7 @@ services:
         build:
             context: .
             dockerfile: ./AngularTravelOnline/Dockerfile
-        image: kamesh08/demo:1000
+        image: kamesh08/demo:100
         expose:
             - 4200
         ports:
@@ -20,7 +20,7 @@ services:
         build:
             context: .
             dockerfile: ./UserAuthentication-Service/Dockerfile
-        image: kamesh08/demo:1001
+        image: kamesh08/demo:101
         expose:
             - 9300
         ports:
