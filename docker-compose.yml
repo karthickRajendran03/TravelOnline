@@ -28,21 +28,7 @@ services:
         networks:
             - emp-network
         logging:
-            driver: json-file
-    OnlineTravelSummaryService:
-        container_name: onlineTravelSummary
-        build:
-            context: .
-            dockerfile: ./KarthickTravelOnline/Dockerfile
-        image: kamesh08/demo:1002
-        expose:
-            - 8091
-        ports:
-            - 8091:8091
-        networks:
-            - emp-network
-        logging:
-            driver: json-file
+            driver: json-file    
 networks:
     emp-network:
         driver: bridge
