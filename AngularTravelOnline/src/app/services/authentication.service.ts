@@ -18,14 +18,14 @@ export class AuthenticationService {
       const options = {
               headers: headers
            };
-    return this.http.post('http://localhost:9300/api/v1/auth/isAuthenticated', {}, options)
+    return this.http.post('http://ec2-3-93-102-221.compute-1.amazonaws.com:9300/api/v1/auth/isAuthenticated', {}, options)
     .map((res) => res['isAuthenticated'])
     .toPromise();
    }
 
   authenticateUser(data) {
     console.log(data);
-    return this.http.post('http://localhost:9300/api/v1/auth/login/', data);
+    return this.http.post('http://ec2-3-93-102-221.compute-1.amazonaws.com:9300/api/v1/auth/login/', data);
   }
 
   setBearerToken(token) {
