@@ -23,7 +23,7 @@ import com.travel.online.model.TravelSummaryResponse;
  */
 @Controller
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://ec2-3-93-102-221.compute-1.amazonaws.com:4200")
 public class TravelSummaryController {
 
 	@Autowired
