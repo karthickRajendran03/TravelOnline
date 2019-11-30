@@ -36,7 +36,7 @@ import io.jsonwebtoken.SignatureException;
 //@FeignClient(name = "UserAuthenticationController")
 ///@RibbonClient(name = "UserAuthenticationController")
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://ec2-3-93-102-221.compute-1.amazonaws.com:4200")
 public class UserAuthenticationController {
 
 	/*
