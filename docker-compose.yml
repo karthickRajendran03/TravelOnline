@@ -28,7 +28,7 @@ services:
         networks:
             - emp-network
         logging:
-            driver: json-file
+            driver: json-file    
     OnlineTravelSummaryService:
         container_name: onlineTravelSummary
         build:
@@ -42,7 +42,7 @@ services:
         networks:
             - emp-network
         logging:
-            driver: json-file
+            driver: json-file        
 networks:
     emp-network:
         driver: bridge
